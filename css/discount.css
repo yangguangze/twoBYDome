@@ -1,0 +1,126 @@
+@import url(reset.css);
+.min_box {
+  width: 100%;
+  background: #cacaca;
+  padding-top: 1px; }
+
+.top {
+  width: 1200px;
+  height: 400px;
+  margin: 20px auto;
+  color: #333;
+  background: url(../images/58ff2f5eN4e006881.jpg) no-repeat center; }
+  .top b {
+    margin: 5px;
+    color: #808080;
+    font-style: normal; }
+  .top span {
+    color: #808080; }
+
+.information {
+  width: 1200px;
+  height: 132px;
+  background: url(../images/58ff3418N6c2486b7.jpg) no-repeat center;
+  margin: 0 auto 40px; }
+
+.list_details {
+  width: 1200px;
+  margin: 0 auto; }
+  .list_details .list_details_list {
+    width: 1215px;
+    overflow: hidden; }
+    .list_details .list_details_list li {
+      float: left;
+      margin-bottom: 30px; }
+      .list_details .list_details_list li a {
+        display: inline-block;
+        width: 285px;
+        height: 285px;
+        margin: 4px 15px 4px 3px; }
+        .list_details .list_details_list li a:hover {
+          box-shadow: 0px 0 4px 3px #ddd; }
+        .list_details .list_details_list li a img {
+          width: 100%;
+          height: 100%; }
+      .list_details .list_details_list li dl {
+        height: 50px;
+        overflow: hidden; }
+        .list_details .list_details_list li dl dt {
+          height: 20px;
+          line-height: 20px;
+          color: #333;
+          font-size: 16px;
+          text-align: center;
+          margin-top: 10px; }
+      .list_details .list_details_list li dd {
+        font-size: 16px;
+        color: #ff3333;
+        text-align: center; }
+
+.recommend {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px; }
+  .recommend a {
+    display: block;
+    width: 1200px;
+    height: 300px;
+    background: url(../images/57403609Nde4f6b00.jpg) no-repeat center;
+    background-size: 100%; }
+
+.body_right {
+  height: 144px;
+  position: fixed;
+  bottom: 100px;
+  right: -22px;
+  width: 48px; }
+  .body_right li {
+    width: 48px;
+    height: 48px;
+    cursor: pointer; }
+  .body_right .body_right_leaving {
+    background: url(../images/rightBar-share.png) no-repeat center; }
+    .body_right .body_right_leaving:hover {
+      background: url(../images/rightBar-shareActive.png) no-repeat center; }
+  .body_right .body_right_code {
+    background: url(../images/rightBar-code.png) no-repeat center;
+    position: relative; }
+    .body_right .body_right_code:hover {
+      background: url(../images/rightBar-codeActive.png) no-repeat center; }
+    .body_right .body_right_code:hover a {
+      display: block; }
+    .body_right .body_right_code a {
+      display: inline-block;
+      position: absolute;
+      left: -160px;
+      top: -65px;
+      display: none; }
+      .body_right .body_right_code a span {
+        display: inline-block;
+        width: 14px;
+        height: 25px;
+        margin-top: -14px;
+        position: absolute;
+        top: 50%;
+        right: -12px;
+        background: url(../images/sprit_biyao.png) no-repeat -59px -214px; }
+      .body_right .body_right_code a dl {
+        background: #fff;
+        padding: 10px;
+        border: 1px solid #dddddd;
+        box-shadow: 0 0 3px #ccc; }
+        .body_right .body_right_code a dl dt {
+          width: 130px;
+          height: 130px;
+          background: url(../images/app.png) no-repeat center; }
+        .body_right .body_right_code a dl dd {
+          margin-top: 10px;
+          text-align: center;
+          color: #523669;
+          font-size: 14px; }
+  .body_right .body_right_top {
+    background: url(../images/rightBar-top.png) no-repeat center; }
+    .body_right .body_right_top:hover {
+      background: url(../images/rightBar-topActive.png) no-repeat center; }
+
+/*# sourceMappingURL=discount.css.map */

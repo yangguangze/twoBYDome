@@ -1,0 +1,84 @@
+@import "reset.css";
+
+$base-width:1200px;
+$base-color:#333 #808080 #fff #523669 #666 #ff3333;
+
+$base-margin:0 auto;
+.top{width:$base-width;margin:20px auto;color:nth($base-color,1);
+    b{margin:5px;color:nth($base-color,2);font-style:normal;}
+    span{color:nth($base-color,2)}
+    }
+
+.information{width:$base-width;background:nth($base-color,3);overflow:hidden;margin:0 auto 40px;
+    .logo{float:left;
+        p{width:100px;height:120px;margin:0 20px;line-height:120px;float:left;
+            img{width:100%;}
+            }
+        dl{float:left;margin:25px 0;
+            dt{font-size:24px;margin-bottom:28px;}
+            dd{color:nth($base-color,2);font-size:16px;
+                a{display:inline-block;width:84px;height:25px;color:nth($base-color,4);
+                    background:url(../images/sup-contect.png) left no-repeat;padding-left:30px;
+                    line-height:23px;}
+            }
+        }
+        
+    }
+    .score{float:right;margin:40px 0;padding-right:20px;
+        li{width:236px;height:25px;overflow:hidden;
+            b{font-style:normal;color:nth($base-color,5);display:inline-block;}
+            span{width:103px;height:15px;display:inline-block;
+            background:url(../images/sprit_biyao.png) -339px -269px;vertical-align:middle;margin-left:3px;}
+            i{font-style:normal;color:#f49f26;margin-left:30px;}
+        }
+    }
+}
+
+
+.list_details{width:$base-width;margin:$base-margin;
+    .list_details_list{width:1215px;overflow:hidden;
+        li{float:left;margin-bottom:30px;position:relative;
+             p{width:120px;height:30px;background:#f39f25;margin-bottom:10px;line-height:30px;text-align:center;
+                     color:#fff;font-size:14px;cursor:pointer;position:absolute;bottom:50px;left:90px;opacity:0;
+                     i{display:inline-block;width:20px;height:16px;margin-right:6px;
+                        background:url(../images/pay_bg.png) no-repeat;vertical-align:middle;}
+                }
+            a{display:inline-block;width:285px;height:285px;margin:4px 15px 4px 3px;
+                &:hover{box-shadow: 0px 0 4px 3px #ddd;}
+                img{width:100%;height:100%;}
+            }
+            dl{height:50px;overflow:hidden;
+                dt{height:20px;line-height:20px;color:nth($base-color,1);font-size:16px;text-align:center;
+                    margin-top:10px;}
+            }   dd{font-size:16px;color:nth($base-color,6);text-align: center;}
+        }
+    }
+}
+
+
+.body_right{height:144px;position:fixed;bottom:100px;right:-22px;width:48px;
+    li{width:48px;height:48px;cursor:pointer;}
+    .body_right_leaving{background:url(../images/rightBar-share.png) no-repeat center;
+        &:hover{background:url(../images/rightBar-shareActive.png) no-repeat center;}
+        }
+    .body_right_code{background:url(../images/rightBar-code.png) no-repeat center;position:relative;
+         &:hover{background:url(../images/rightBar-codeActive.png) no-repeat center;}
+         &:hover a{display:block;}
+         a{display:inline-block;position:absolute;left:-160px;top:-65px;display:none;
+            span{display:inline-block;width:14px;height:25px;margin-top:-14px;position:absolute;top:50%;
+                right:-12px;background:url(../images/sprit_biyao.png) no-repeat -59px -214px;}
+            dl{background:#fff;padding:10px;border:1px solid #dddddd;box-shadow:0 0 3px #ccc;
+                dt{width:130px;height:130px;background:url(../images/app.png) no-repeat center;}
+                dd{margin-top:10px;text-align:center;color:#523669;font-size:14px;}
+                }
+            }
+        }
+ 
+    .body_right_top{background:url(../images/rightBar-top.png) no-repeat center;
+        &:hover{background:url(../images/rightBar-topActive.png) no-repeat center;}
+        }
+    }
+
+
+
+

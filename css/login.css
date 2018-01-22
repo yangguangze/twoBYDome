@@ -1,0 +1,70 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dd,dt,fieldset,legend{margin:0;padding:0;}
+ul,li,ol{list-style:none;}
+a{text-decoration:none;color:#8c8292;}
+body,html{font-size:12px;height:100%;font-family:"微软雅黑";background:#f9f9f9;}
+img,iframe{border:none;}
+.clear{width:0;height:0;overflow:hidden;clear:both;}
+
+/*顶部*/
+.box{width:100%;border-bottom:1px solid #eae4e8;}
+.box .header{width:1200px;height:98px;margin:0 auto;}
+.box .header:after{content:"";display:block;clear:both;}
+.box .header .logo_a{padding-top:27px;display:block;float:left;}
+
+.logo_come{float:right;margin-top:40px;color:#8c8292;}
+
+
+/*中间内容*/
+.box-1{width:100%;}
+.main{width:1200px;height:580px;margin:0 auto;}
+/*用户登录*/
+.main_form{width:750px;height:346px;padding-top:50px;float:right;}
+.main_form_top{width:400px;height:25px;line-height:25px;}
+.main_form_top_img{display:inline-block;width:25px;height:32px;background:url(../images/sprit_biyao.png) no-repeat;
+	background-position:0 -521px;margin-right:10px;vertical-align:middle;}
+.main_form .main_form_top_span{font-size:20px;color:#523669;}
+/*手机号码*/
+.main_form_input-1{margin-top:20px;height:40px;}
+.main_form_input-1_dd_1{float:left;}
+.main_form_input-1_dd_1_phone{width:360px;height:17px;line-height:17px;font-size:14px;padding:11px 20px;
+	border:1px solid #e8e8e8;color:#999;outline:none;}
+.main_form_input-1_dd_2{float:left;line-height:40px;}
+.main_form_input-1_dd_2 .prompt{display:inline-block;padding-left:10px;color:#f49f26;}
+/*自动登录*/
+.main_form .automatic{width:400px;margin-top:20px;position:relative;}
+.main_form .automatic .checkbox{display:inline-block;width:15px;height:15px;margin-right:10px;
+	background:url(../images/commonSprite.png) no-repeat 0 -80px;vertical-align:middle;}
+.main_form .automatic .automaticLogon{color:#8a8a8a;}
+.main_form .automatic .forget{position:absolute;color:#07a6df;top:0;right:0;}
+/*登录按钮*/
+.main_form .button{width:400px;height:50px;margin-top:38px;background:#F49F26;color:#fff;font-size:20px;
+	text-align:center;line-height:50px;border:none;cursor:pointer;outline:none;}
+/*特殊登录方式*/
+.main_form .specialBtn{width:400px;margin-top:40px;}
+.main_form .specialBtn span{font-size:14px;color:#666;margin-right:10px;vertical-align:middle;}
+.main_form .specialBtn .weixin{display:inline-block;width:100px;height:32px;
+	background:url(../images/weix.jpg) no-repeat;vertical-align:middle;margin-right:6px;}
+.main_form .specialBtn .qq{display:inline-block;width:100px;height:32px;
+	background:url(../images/qq.jpg) no-repeat;vertical-align:middle;}
+
+/*底部*/
+footer{width:1200px;height:125px;margin:60px auto 0;background:#fff;padding-top:38px;}
+footer .left{float:left;margin-left:136px;}
+footer .left ul{padding-left:0;}
+footer .left li{display:inline-block;border-right:2px solid #ddd;padding-right:15px;margin-right:15px;}
+footer .left li a{color:#724a88;font-size:14px;}
+footer .left span{display:block;margin:10px 0;color:#999;}
+footer .left .p-1 i{width:20px;height:20px;display:inline-block;margin-right:3px;vertical-align:middle;
+	background:url(../images/ga.png) no-repeat;}
+footer .left .p-1 a{color:#999;}
+footer .left .p-2{margin-left:27px;color:#999;}
+
+footer .right{float:left;margin-left:120px;padding-left:0;}
+footer .right li{float:left;margin-right:40px;}
+footer .right .code-1{display:inline-block;width:84px;height:84px;margin-right:15px;vertical-align:middle;
+	background:url(../images/comSprite.png) no-repeat -139px 0;}
+footer .right dl{display:inline-block;vertical-align:middle;}
+footer .right dl dt{font-size:14px;line-height:28px;color:#333;}
+footer .right dl dd{font-size:14px;color:#724a88;line-height:28px;}
+footer .right .code-2{display:inline-block;width:84px;height:84px;margin-right:15px;vertical-align:middle;
+	background:url(../images/comSprite.png) no-repeat -238px 0;}
