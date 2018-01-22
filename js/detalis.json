@@ -1,0 +1,85 @@
+{
+"details":[	
+		{"id":1,"img":"images/wKhkVFkBZgiAIIe5AACdmikmqnk394.jpg"},
+		{"id":1,"img":"images/wKhkVVkBZjOAIr4CAABUZ2pVIs0659.jpg"},
+		{"id":1,"img":"images/wKhkVVkAeESAAG91AACugbIyn_U423.jpg"},
+		{"id":1,"img":"images/wKhkVFkAeEiAdRacAACqsBWbVCY967.jpg"},
+		{"id":1,"img":"images/wKhkVVkBaeuAahyUAACfro_mIpY020.jpg"},
+		{"id":2,"img":"images/wKhkVVkP1e2AMNErAAB02TNU9K8957.jpg"},
+		{"id":2,"img":"images/wKhkVVkAdnOAKmGXAAB11HYQ8HE787.jpg"},
+		{"id":2,"img":"images/wKhkVVkAdnWAUH77AABeN9TKTMU122.jpg"},
+		{"id":2,"img":"images/wKhkVFkAdnmAFJ59AACEO1J7EU0836.jpg"},
+		{"id":2,"img":"images/wKhkVVkAdnuAHi9oAABgyucZbCY304.jpg"}
+		],		
+			
+
+	"text":[
+		{"id":1,"title":"耐高温茶水果汁壶凉水扎壶五件套装",
+		"introduce":"耐高温 加厚玻璃 不锈钢盖出水流畅",
+		"price":"179","minBox":"images/wKhkVFkBZgiAIIe5AACdmikmqnk394.jpg",
+		"product":"耐高温凉水杯五套装","texture":"高硼硅耐热玻璃","combination":"凉水壶*1个 水杯*4个",
+		"color":"透明","type":"凉水壶+水杯","number":"B7010005","capacity":"凉水壶:1000ML水杯:229ML"
+		},
+		{"id":2,"title":"白酒杯烈酒杯分酒器7件套","introduce":"晶莹剔透 精致典雅 光滑设计",
+		"price":"129","minBox":"images/wKhkVVkP1e2AMNErAAB02TNU9K8957.jpg",
+		"product":"白酒杯烈酒杯分酒器套装","texture":"高白玻璃","combination":"7件套",
+		"color":"透明","type":"白酒杯/烈酒杯","number":"A7009007","capacity":"分酒器:200ml 白酒杯:6ml"
+		}
+	],
+	
+	"blend":[{"id":1,"tit":"不锈钢盖出水流畅","titImg":"images/wKhkVVkCnV2ADJ0-AABF095e_q4258.jpg"},
+			{"id":1,"tit":"冷饮壶 壶盖防尘","titImg":"images/wKhkVVkCnWSAf0bfAABLRRx3Ft4752.jpg"},
+			{"id":1,"tit":"耐零下20度-150度高低温度","titImg":"images/wKhkVVkCnXKAAjqIAABZlJN4wbk395.jpg"},
+			{"id":1,"tit":"经典规格 便于握拿","titImg":"images/wKhkVFkCnXWANJdBAABKFLFCNqU841.jpg"},
+			{"id":1,"tit":"平整加厚壶底 圆滑瓶口","titImg":"images/wKhkVVkCnX2ADG6wAABOXb5MBOM073.jpg"},
+			{"id":1,"tit":"贴心带孔阻隔茶渣","titImg":"images/wKhkVFkCnYCACdIzAABtDAmklw4156.jpg"},
+			{"id":1,"tit":"独特杯底设计 更具欣赏","titImg":"images/wKhkVVkCnYSAdzbMAAB4oFQT5-k915.jpg"},
+			{"id":1,"tit":"纯手工吹制而成","titImg":"images/wKhkVFkCnYeAbuiUAAEFMGnOY44968.jpg"},
+			{"id":2,"tit":"独具匠心 精致典雅","titImg":"images/wKhkVVkJQ8yALKo2AABtUzrw3rY494.jpg"},
+			{"id":2,"tit":"手工一体成型结实坚固","titImg":"images/wKhkVVkJQ86AQNlFAABRiatO7i4504.jpg"},
+			{"id":2,"tit":"经典规格 便于握拿","titImg":"images/wKhkVFkJQ9GAfBxUAABawlbkDzo301.jpg"},
+			{"id":2,"tit":"新颖手柄设计","titImg":"images/wKhkVFkCnXWANJdBAABKFLFCNqU841.jpg"},
+			{"id":2,"tit":"加厚杯底牢固","titImg":"images/wKhkVVkJQ9aAJMszAABW4wbYuUg875.jpg"},
+			{"id":2,"tit":"健康材质 环保无害","titImg":"images/wKhkVFkJQ9mAQPB4AABaVCx05Mk393.jpg"},
+			{"id":2,"tit":"纯手工吹制而成","titImg":"images/wKhkVVkAWbKAf4agAAFbDrqy8Wo181.jpg"}
+	]
+}
+
+
+
+										
+											
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

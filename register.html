@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/register.css" />
+	</head>
+	<body>
+		<!--顶部-->
+	<section class="header-warp"></section>
+	<!--内容-->
+	<section class="box-1">
+		<div class="main">
+			<form action="" class="main_form">
+				<div class="main_form_top">
+					<i class="main_form_top_img"></i>
+					<span class="main_form_top_span">新用户注册</span>
+				</div>
+				<!--手机号码-->
+				<dl class="main_form_input-1">
+					<dd class="main_form_input-1_dd_1">
+						<input type="text" class="main_form_input-1_dd_1_phone" id="cellphone" value="请输入您的手机号码" />
+					</dd>
+					<dd class="main_form_input-1_dd_2"><span class="prompt" id="cellphone_prompt"></span></dd>
+				</dl>
+				<!--验证码-->
+				<div class="main_form_verification_number" style="display: none;">
+					<input type="text" class="main_form_verification_number_1" />
+					<div class="main_form_verification_number_img">
+						<img src="images/yzm.gif" alt="" />
+					</div>
+					<a href="" class="main_form_verification_number_change">
+						看不清<br />
+						换一张
+					</a>
+					<span class="main_form_verification_number_prompt"></span>
+				</div>
+				<!--短信验证码-->
+				<div class="main_form_input_verification">
+					<input type="text" class="main_form_input_verification_1" value="请输入短信验证码" />
+					<input type="button" class="main_form_input_verification_2" value="获取验证码"/>
+					<span class="main_form_input_verification_prompt"></span>
+				</div>
+				<!--密码-->
+				<dl class="main_form_input-1">
+					<dd class="main_form_input-1_dd_1">
+						<input type="password" class="main_form_input-1_dd_1_phone" id="password" placeholder="请输入您要设置的密码"/>
+					</dd>
+					<dd class="main_form_input-1_dd_2"><span class="prompt" id="password_prompt"></span></dd>
+				</dl>
+				<!--验证密码-->
+				<dl class="main_form_input-1">
+					<dd class="main_form_input-1_dd_1">
+						<input type="password" class="main_form_input-1_dd_1_phone" id="passwordTo" placeholder="请确认密码"/>
+					</dd>
+					<dd class="main_form_input-1_dd_2"><span class="prompt" id="passwordTo_prompt"></span></dd>
+				</dl>
+				<!--协议-->
+				<div class="automatic">
+					<i class="checkbox"></i>
+					<span class="agree">我已同意并阅读</span>
+					<a href="" class="agreement">《必要服务协议》</a> 
+					<span class="placeAgree"></span>
+				</div>
+				<!--注册-->
+				<input type="button" class="button" value="注册" />
+				<span class="registration" style="color:#f49f26;"></span>
+				
+			</form>
+		</div>
+	</section>
+	
+	<!--脚部-->
+	<section class="footer-warp"></section>
+	</body>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+		$(".header-warp").load("http://localhost/dome_biyao/header-register.html")
+		$(".footer-warp").load("http://localhost/dome_biyao/footer.html")
+	</script>
+	<script>
+	//选择阅读协议
+	var index = 0;
+	$(".checkbox").click(function(){
+		if(index == 0){
+			$(".checkbox").css({backgroundPosition:"0 -80px"});
+			index = 1
+		}
+		else{
+			$(".checkbox").css({backgroundPosition:"-20px -80px"});
+			index = 0
+		}
+	})
+	//ajax
+	$(document).ajaxStart(function(){
+		$Img = $("<img src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488433789960&di=aed91615f003559ac1549b908d7b57a9&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01368e57c51bba0000018c1be96be9.gif'>")
+		$(".registration").html($Img)
+	})
+	$(".button").click(function(){
+		for(var i = 0 ; i < arr.length; i++){
+			if(!arr[i] == true){
+				return
+			}
+		}
+		if(index == 1){
+			$(".placeAgree").html("请同意必要服务协议")
+			return
+		}
+		var user = $("#cellphone").val();
+		var password = $("#password").val();
+		$.ajax({
+			url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+			type:"POST",
+			data:{
+				status:"register",
+				userID:user,
+				password:password
+			},
+			success:function(res){
+				res = Number(res);
+				switch(res){
+					case 0:$(".registration").html("用户重名了");break;
+					case 1:$(".registration").html("注册成功");
+					setTimeout(function(){
+						window.location.href = "login.html";
+					},3000);break;
+					case 2:$(".registration").html("数据库出错");break;
+				}
+			},
+			error:function(){
+				console.log("错误")
+			}
+		})
+	})
+	//验证码显示隐藏
+	$(".main_form_input_verification_2").click(function(){
+		$(".main_form_verification_number").css({display:"block"})
+	})
+	var arr = [false,false,false,false];//创建一个数组,接收每个正则事件的返回值
+	//手机号码
+		$("#cellphone").focus(function(){
+			if(this.value == "请输入您的手机号码"){
+				this.value = ""
+			}
+		})
+		$("#cellphone").blur(function(){
+			if(this.value == ""){
+				this.value = "请输入您的手机号码"
+				$("#cellphone_prompt").html("您还没有填写手机号哦")
+			}else if(!(this.value == "")){
+				var reg = /^1[3|4|5|7|8]\d{9}$/g;
+				if(!reg.test(this.value)){
+					$("#cellphone_prompt").html("手机号码格式错误，请重新输入")
+				}else{
+					$("#cellphone_prompt").html("");
+					arr[0] = true
+				}
+				
+			}
+			
+			
+		})
+	//短信验证码
+	$(".main_form_input_verification_1").focus(function(){
+		if(this.value == "请输入短信验证码"){
+			this.value = ""
+		}
+	})
+	$(".main_form_input_verification_1").blur(function(){
+		if(this.value == ""){
+			this.value = "请输入短信验证码"
+			$(".main_form_input_verification_prompt").html("请填写手机验证码")
+		}else if(!this.value == ""){
+			var reg = /^\S{6}$/gi
+			if(!reg.test(this.value)){
+				$(".main_form_input_verification_prompt").html("输入验证码需要6位")
+			}else{
+				$(".main_form_input_verification_prompt").html("");
+				arr[1] = true
+			}
+			
+		}
+		
+	})		
+	//密码
+	$("#password").focus(function(){
+		if(this. placeholder == "请输入您要设置的密码"){
+			this. placeholder = ""
+		}
+	})
+	$("#password").blur(function(){
+		if(this.placeholder == ""){
+			this.placeholder = "请输入您要设置的密码"
+		}
+		if(this.value == ""){
+			$("#password_prompt").html("请输入6-32位密码，数字、字母、符号两种以上组合")
+		}else if(!this.value == ""){
+			var reg2 = /^\s$/g;
+			if(reg2.test(this.value)){
+				$("#password_prompt").html("密码中不可包含空格")
+			}else{
+				var reg = /^\S{6,32}$/gi
+				if(!reg.test(this.value)){
+					$("#password_prompt").html("输入密码需在6位到32位间")
+				}else{
+					$("#password_prompt").html("");
+					arr[2] = true
+				}
+			}
+			
+		}
+		
+	})	
+//验证密码
+	$("#passwordTo").focus(function(){
+		if(this.placeholder == "请确认密码"){
+			this.placeholder = ""
+		}
+	})
+	$("#passwordTo").blur(function(){
+		if(this.placeholder == ""){
+			this.placeholder = "请确认密码"
+		}
+		if(this.value == ""){
+			$("#passwordTo_prompt").html("请填写确认密码")
+		}else if(!this.value == ""){
+			if(!(this.value == $("#password").val())){
+				$("#passwordTo_prompt").html("两次密码输入不一致，请重新输入")
+			}else{
+				$("#passwordTo_prompt").html("")
+				arr[3] = true
+			}
+			
+		}
+		
+	})
+	</script>
+</html>
